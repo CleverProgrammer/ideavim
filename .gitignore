@@ -1,6 +1,7 @@
 # ignore everything
 *
 
-# except this
+# except these
 !.ideavimrc
-!.gitignore
+!.vimrc
+!.gitignore 
