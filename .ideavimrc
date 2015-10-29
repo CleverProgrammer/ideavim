@@ -1,0 +1,6 @@
+" turn off loud annoying bells triggered on error
+set visualbell
+set noerrorbells
+
+" map jk to escape key
+inoremap jk <ESC>
