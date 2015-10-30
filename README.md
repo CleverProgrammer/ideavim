@@ -1,8 +1,9 @@
 # ideavim
 ###Vim and Ideavim settings stored here for seamless integration. 
 <hr>
-####Important MAPPING Notes
-<br> Source: [Stack Overflow Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)<br>
+#####Important MAPPING Notes
+Source: [Stack Overflow Vim Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)<br>
+<code> map <br> remap <br> noremap <br> inoremap <br> <vnoremap> </code>
 -  `n`: normal only
 -  `v`: visual and select
 -  `o`: operator-pending
