@@ -1,6 +1,30 @@
+" ========= Important MAPPING Notes =========
+" Source: " http://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
+" n: normal only
+" v: visual and select
+" o: operator-pending
+" x: visual only
+" s: select only
+" i: insert
+" c: command-line
+" l: insert, command-line, regexp-search (and others. Collectively called "Lang-Arg" pseudo-mode)
+" ======= End Important MAPPING notes ========
+
+
 " turn off loud annoying bells triggered on error
 set visualbell
 set noerrorbells
 
-" map jk to escape key
+" remappings
 inoremap jk <ESC>
+nnoremap <SPACE> <Nop>  " needed in linux. Nop sets space to none.
+
+" space as a map leader key
+let mapleader = " "  " space
+nnoremap <leader>s ~
+nnoremap <leader>d dd
+
+" comma as a map leader key
+let mapleader = ","
+nnoremap <leader>s ~
+nnoremap <leader>d dd

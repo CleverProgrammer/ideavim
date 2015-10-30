@@ -4,6 +4,9 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
+" INHERIT ALL SETTINGS FROM IDEAVIMRC
+source ~/.ideavimrc
+
 " COLORS AND FONTS FOR VIM THEME
 syntax enable
 set background=dark
