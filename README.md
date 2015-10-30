@@ -1,7 +1,3 @@
-# ideavim
-###Vim and Ideavim settings stored here for seamless integration. 
-<hr>
-#####Important MAPPING Notes
 <strong>Question:</strong> <em>What are the differences between all these mapping commands anyways!?</em><br> <code> map remap noremap inoremap vnoremap </code><br>
 <strong>Answer:</strong> [Stack Overflow Vim Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)
 -  <kbd>n</kbd>: normal only
