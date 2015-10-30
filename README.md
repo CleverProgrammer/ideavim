@@ -16,11 +16,11 @@ called "$ <br>
 <hr>
 
 
-<strong>turn off loud annoying bells triggered on error push</strong>
+<em>turn off loud annoying bells triggered on error push</em>
 - `set visualbell` <br>
 - `set noerrorbells`<br>
 
-<strong>remappings</strong>
+<em>remappings</em>
 - `inoremap jk <ESC>`<br>
 - `nnoremap <SPACE> <Nop>`  " needed in linux. Nop sets space to none.<br>
 
