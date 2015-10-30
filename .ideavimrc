@@ -17,14 +17,20 @@ set noerrorbells
 
 " remappings
 inoremap jk <ESC>
-nnoremap <SPACE> <Nop>  " needed in linux. Nop sets space to none.
+" nnoremap <SPACE> <Nop>  " needed in linux. Nop sets space to none.
 
 " space as a map leader key
 let mapleader = " "  " space
 nnoremap <leader>s ~
 nnoremap <leader>d dd
+" edit ideavim from anywhere
+nnoremap <leader>ev :vsplit ~/.ideavimrc<cr>
 
 " comma as a map leader key
 let mapleader = ","
 nnoremap <leader>s ~
 nnoremap <leader>d dd
+" edit ideavim from anywhere
+nnoremap <leader>ev :vsplit ~/.ideavimrc<cr>
+" refresh ideavimrc
+nnoremap <leader>sv :source ~/.ideavimrc<cr>
