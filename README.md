@@ -3,7 +3,7 @@
 <hr>
 #####Important MAPPING Notes
 Source: [Stack Overflow Vim Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)<br>
-What are the differences between all these mapping commands anyways!? <code> map remap noremap inoremap <vnoremap> </code>
+- What are the differences between all these mapping commands anyways!?<br> <code> map remap noremap inoremap <vnoremap> </code>
 -  `n`: normal only
 -  `v`: visual and select
 -  `o`: operator-pending
