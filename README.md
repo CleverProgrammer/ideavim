@@ -5,7 +5,7 @@
 <br>
 " ========= Important MAPPING Notes =========
 " Source: " 
-http://stackoverflow.com/questions/3776117/what-is-the-differen$
+[Stack Overflow Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)
 - " `n`: normal only
 - " `v`: visual and select
 - " `o`: operator-pending
@@ -26,5 +26,3 @@ called "$
 " remappings
 `inoremap jk <ESC>`<br>
 `nnoremap <SPACE> <Nop>`  " needed in linux. Nop sets space to none.<br>
-
-
