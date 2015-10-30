@@ -2,8 +2,8 @@
 ###Vim and Ideavim settings stored here for seamless integration. 
 <hr>
 #####Important MAPPING Notes
-Source: [Stack Overflow Vim Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)<br>
-- What are the differences between all these mapping commands anyways!?<br> <code> map remap noremap inoremap vnoremap </code>
+- <strong>Question:</strong> What are the differences between all these mapping commands anyways!?<br> <code> map remap noremap inoremap vnoremap </code><br>
+<strong>Answer:</strong> [Stack Overflow Vim Mapping](http://stackoverflow.com/questions/3776117/what-is-the-differen$)
 -  <kbd>n</kbd>: normal only
 -  <kbd>v</kbd>: visual and select
 -  <kbd>o</kbd>: operator-pending
