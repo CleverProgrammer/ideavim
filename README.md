@@ -19,6 +19,7 @@ called "$ <br>
 <strong>turn off loud annoying bells triggered on error push</strong>
 - `set visualbell` <br>
 - `set noerrorbells`<br>
+
 <strong>remappings</strong>
 - `inoremap jk <ESC>`<br>
 - `nnoremap <SPACE> <Nop>`  " needed in linux. Nop sets space to none.<br>
