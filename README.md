@@ -21,6 +21,6 @@ called "$ <br>
 - `set noerrorbells`<br>
 
 <strong>Hit jk to enter normal mode!</strong>
-- `inoremap jk <ESC>`<br>
-    <strong>Question:</strong> <em> ... But what if I want to write `jk`!? </em><br>
+- `inoremap <kbd>jk</kbd> <ESC>`<br>
+    <strong>Question:</strong> <em> ... But what if I want to write <kbd>jk</kbd>!? </em><br>
     <strong>Answer:</strong> No problem! Just hit <kbd>j</kbd> wait one second, and hit <kbd>k</kbd>!
