@@ -23,4 +23,4 @@ called "$ <br>
 <strong>Hit jk to enter normal mode!</strong>
 - `inoremap jk <ESC>`<br>
     <strong>Question:</strong> <em> ... But what if I want to write `jk`!? </em><br>
-    <strong>Answer:</strong> No problem! Just hit `j`, wait one second, and hit `k`!
+    <strong>Answer:</strong> <em>No problem! Just hit `j`, wait one second, and hit `k`!<\em>
