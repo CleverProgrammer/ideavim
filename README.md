@@ -19,6 +19,7 @@ called "$ <br>
 - `set visualbell` <br>
 - `set noerrorbells`<br>
 <br>
+
 #####remappings
 - `inoremap jk <ESC>`<br>
 - `nnoremap <SPACE> <Nop>`  " needed in linux. Nop sets space to none.<br>
