@@ -20,7 +20,5 @@ called "$ <br>
 - `set visualbell` <br>
 - `set noerrorbells`<br>
 
-<strong>remappings</strong>
+<strong>Hit jk to enter normal mode!</strong>
 - `inoremap jk <ESC>`<br>
-- `nnoremap <SPACE> <Nop>`  " needed in linux. Nop sets space to none.<br>
-
