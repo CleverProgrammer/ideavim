@@ -15,22 +15,43 @@
 set visualbell
 set noerrorbells
 
+" split open to the right
+set splitright
+
 " remappings
 inoremap jk <ESC>
-" nnoremap <SPACE> <Nop>  " needed in linux. Nop sets space to none.
 
-" space as a map leader key
-let mapleader = " "  " space
-nnoremap <leader>s ~
-nnoremap <leader>d dd
-" edit ideavim from anywhere
-nnoremap <leader>ev :vsplit ~/.ideavimrc<cr>
-
-" comma as a map leader key
+" ========= Map Leader Comma BEGIN =========
 let mapleader = ","
 nnoremap <leader>s ~
-nnoremap <leader>d dd
 " edit ideavim from anywhere
 nnoremap <leader>ev :vsplit ~/.ideavimrc<cr>
-" refresh ideavimrc
-nnoremap <leader>sv :source ~/.ideavimrc<cr>
+" refresh vimrc source. This way you don't have to restart files
+nnoremap <leader>es :source ~/.vimrc<cr>
+" tab close
+nnoremap <leader>tc :close<cr>
+" tab only
+nnoremap <leader>to :only<cr>
+" ========= Map Leader Comma END =========
+
+" move current line, 1 line down.
+nnoremap <c-j> :m+1<cr>
+" move current line, 1 line up.
+nnoremap <c-k> :m-2<cr>
+
+" ========= Refactoring BEGIN =========
+" local variable refactor
+nnoremap gr gd[{V%::s/<C-R>///g<left><left>
+" global variable refactor
+nnoremap gR gD:%s/<C-R>///g<left><left>
+" ========= Refactoring END =========
+
+" reformat code in intellij ide's using ideavim
+nnoremap \r :action ReformatCode<cr>
+
+" ========= Python/Pymode Commands =========
+" nnoremap <leader>qwe :PymodeRun<cr>
+" the w after exec is needed for some mysterious reason
+" save current file and run it
+nnoremap <buffer> <leader>qwe :w<cr> :exec 'w !python' shellescape(@%, 1)<cr>
+" ========= Pymode Commands =========

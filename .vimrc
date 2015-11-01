@@ -1,9 +1,11 @@
+" Pathogen load
 filetype off
+call pathogen#infect()
 call pathogen#helptags()
-execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
+execute pathogen#infect()
 " INHERIT ALL SETTINGS FROM IDEAVIMRC
 source ~/.ideavimrc
 
@@ -40,3 +42,7 @@ inoremap jk <ESC>
 
 set visualbell
 set noerrorbells
+
+" persistent undo
+set undofile
+set undodir=~/.vimundo/
