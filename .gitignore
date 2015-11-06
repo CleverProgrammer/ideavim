@@ -1,2 +1,7 @@
-/Users/Rafeh*
-!/Users/Rafeh/.vimrc
+# ignore everything
+*
+
+# except these
+!.ideavimrc
+!.vimrc
+!.gitignore 
