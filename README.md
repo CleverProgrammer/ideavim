@@ -7,8 +7,7 @@
 -  <kbd>s</kbd>: select only
 -  <kbd>i</kbd>: insert
 -  <kbd>c</kbd>: command-line
--  <kbd>l</kbd>: insert, command-line, regexp-search (and others. Collectively 
-called "$ <br>
+-  <kbd>l</kbd>: insert, command-line, regexp-search
 <hr>
 
 
