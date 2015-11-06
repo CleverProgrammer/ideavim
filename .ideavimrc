@@ -17,10 +17,14 @@ cnoremap help vert help
 set visualbell
 set noerrorbells
 
+" turn blink cursor off (macvim)
+set guicursor+=a:blinkon0
+
 " delete blank lines
 " :g/^$/d
 
-" ======= access system clipboard ========
+
+" access system clipboard 
 set clipboard=unnamed
 nnoremap yy "*yy
 
@@ -29,6 +33,9 @@ set splitright
 
 " remappings
 inoremap jk <ESC>
+
+" enter should add a new line
+nnoremap <cr> o<esc>k$
 
 " ========= Map Leader Comma BEGIN =========
 let mapleader = ","

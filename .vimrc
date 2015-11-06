@@ -7,8 +7,9 @@ filetype plugin on
 syntax on
 
 execute pathogen#infect()
-" INHERIT ALL SETTINGS FROM IDEAVIMRC
+" INHERIT ALL SETTINGS FROM IDEAVIMRC and GVIMRC
 source ~/.ideavimrc
+source ~/.gvimrc
 
 " COLORS AND FONTS FOR VIM THEME
 syntax enable
