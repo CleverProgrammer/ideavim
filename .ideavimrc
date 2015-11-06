@@ -10,10 +10,19 @@
 " l: insert, command-line, regexp-search (and others. Collectively called "Lang-Arg" pseudo-mode)
 " ======= End Important MAPPING notes ========
 
+" open all help windows vertically
+cnoremap help vert help
 
 " turn off loud annoying bells triggered on error
 set visualbell
 set noerrorbells
+
+" delete blank lines
+" :g/^$/d
+
+" ======= access system clipboard ========
+set clipboard=unnamed
+nnoremap yy "*yy
 
 " split open to the right
 set splitright
@@ -26,7 +35,8 @@ let mapleader = ","
 nnoremap <leader>s ~
 " edit ideavim from anywhere
 nnoremap <leader>ev :vsplit ~/.ideavimrc<cr>
-" refresh vimrc source. This way you don't have to restart files
+" refresh vimrc source. This way you don't have to restart for changes to 
+" take effect
 nnoremap <leader>es :source ~/.vimrc<cr>
 " tab close
 nnoremap <leader>tc :close<cr>
@@ -50,8 +60,30 @@ nnoremap gR gD:%s/<C-R>///g<left><left>
 nnoremap \r :action ReformatCode<cr>
 
 " ========= Python/Pymode Commands =========
-" nnoremap <leader>qwe :PymodeRun<cr>
+" run pymode in vertical split
+autocmd BufEnter __run__,__doc__ :wincmd L
+nnoremap <leader>qwe :PymodeRun<cr>
 " the w after exec is needed for some mysterious reason
-" save current file and run it
-nnoremap <buffer> <leader>qwe :w<cr> :exec 'w !python' shellescape(@%, 1)<cr>
-" ========= Pymode Commands =========
+" save current file and run it in python 3
+nnoremap <buffer> <leader>wer :w<cr> :exec 'w !python3' shellescape(@%, 1)<cr>
+" comment a line
+nnoremap <leader>cc I# <esc>$
+" uncomment a line
+nnoremap <leader>C :s/# //g<esc>$
+" quickly cycle through buffers
+nnoremap <leader>df :bn<cr>
+" ========= END Pymode Commands =========
+
+" ========= Git Fugitive Plugin Commands =========
+" ONLY WORKS IF YOU HAVE THE FUGITIVE VIM PLUGIN
+nnoremap <leader>gw :Gwrite<cr>
+
+" ========= Airline =========
+" line that will make statusline appear at all times
+set laststatus=2
+" let g:airline_theme='bubblegum'
+let g:airline_theme='simple'
+" let g:airline_theme='luna'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" ========= End Airline =========
