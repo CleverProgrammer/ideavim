@@ -23,6 +23,8 @@ set guicursor+=a:blinkon0
 " delete blank lines
 " :g/^$/d
 
+" ========= VIM WILDIGNORE =========
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
 
 " access system clipboard 
 set clipboard=unnamed
@@ -35,7 +37,7 @@ set splitright
 inoremap jk <ESC>
 
 " enter should add a new line
-nnoremap <cr> o<esc>k$
+nnoremap <cr> o<esc>$
 
 " ========= Map Leader Comma BEGIN =========
 let mapleader = ","
@@ -85,12 +87,27 @@ nnoremap <leader>df :bn<cr>
 " ONLY WORKS IF YOU HAVE THE FUGITIVE VIM PLUGIN
 nnoremap <leader>gw :Gwrite<cr>
 
-" ========= Airline =========
-" line that will make statusline appear at all times
+" ========= Airline Plugin Commands =========
+" ONLY WORKS IF YOU HAVE THE AIRLINE PLUGIN
+" statusline appear at all times
 set laststatus=2
 " let g:airline_theme='bubblegum'
-let g:airline_theme='simple'
+" let g:airline_theme='simple'
 " let g:airline_theme='luna'
+let g:airline_theme='dark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " ========= End Airline =========
+
+" ========= Repeat Plugin Commands =========
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
+" ========= CtrlP Plugin Commands ===========
+" ONLY WORKS IF YOU HAVE THE CTRLP PLUGIN
+nnoremap <leader><leader>coursera :CtrlP ~/Dropbox/github/python-programs/coursera<cr>
+" files to ignore
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|pyc|swp|)$'
+
+" ========= Tagbar Plugin Commands ===========
+" ONLY WORKS IF YOU HAVE THE TAGBAR PLUGIN
+nnoremap <leader>tt :TagbarToggle<cr>
