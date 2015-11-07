@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/Rafeh/Dropbox/github/pull_requests/algorithms/tests'
-let g:netrw_dirhist_2='/Users/Rafeh/Dropbox/github/pull_requests/algorithms/.git'
-let g:netrw_dirhist_3='/Users/Rafeh/Dropbox/github/pull_requests/algorithms/.ropeproject'
-let g:netrw_dirhist_4='/Users/Rafeh/Dropbox/github/pull_requests/algorithms/.git'
