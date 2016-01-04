@@ -78,7 +78,7 @@ set showmatch
 " enable all Python syntax highlighting features
 let python_highlight_all = 1 
 
-inoremap jk <ESC>
+imap jk <ESC>
 
 set visualbell
 set noerrorbells
