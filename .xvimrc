@@ -1,2 +1,113 @@
-source ~/.vimrc
-imap jk <esc>
+" ===== VUNDLE: A VIM PLUGIN MANAGER =====
+
+" comma as map leader!!
+let mapleader = ","
+
+" turn mouse on
+set mouse=a
+
+" enable syntax
+syntax on
+
+" INHERIT ALL SETTINGS FROM IDEAVIMRC and GVIMRC
+source ~/.gvimrc
+" refresh from source shortcut
+nnoremap <leader>es :source ~/.vimrc<cr>
+
+" COLORS AND FONTS FOR VIM THEME
+set background=dark
+syntax enable
+colorscheme solarized
+
+" show line numbers
+set number
+
+" set tabs to have 4 spaces
+set ts=4
+
+" indent when moving to the next line while writing code
+set autoindent
+
+" expand tabs into spaces
+set expandtab
+
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+
+" show a visual line under the cursor's current line
+set cursorline
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1 
+
+imap jk <ESC>
+
+set visualbell
+set noerrorbells
+
+" persistent undo
+set undofile
+set undodir=~/.vimundo/
+
+nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+
+" ========= Important MAPPING Notes =========
+" Source: " http://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
+" n: normal only
+" v: visual and select
+" o: operator-pending
+" x: visual only
+" s: select only
+" i: insert
+" c: command-line
+" l: insert, command-line, regexp-search (and others. Collectively called "Lang-Arg" pseudo-mode)
+" ======= End Important MAPPING notes ========
+
+" open all help windows vertically
+cnoremap help vert help
+
+" turn blink cursor off (macvim)
+set guicursor+=a:blinkon0
+
+" delete blank lines
+" :g/^$/d
+
+" ========= VIM WILDIGNORE =========
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
+
+" access system clipboard 
+set clipboard=unnamed
+nnoremap yy "*yy
+
+" split open to the right
+set splitright
+
+" remappings
+inoremap jk <ESC>
+
+" enter should add a new line
+nnoremap <cr> o<esc>$
+
+" ========= Map Leader Comma BEGIN =========
+" edit ideavim from anywhere
+nnoremap <leader>ei :vsplit ~/.ideavimrc<cr>
+" tab close
+nnoremap <leader>tc :close<cr>
+" tab only
+nnoremap <leader>to :only<cr>
+" ========= Map Leader Comma END =========
+
+" move current line, 1 line down.
+nnoremap <c-j> :m+1<cr>
+" move current line, 1 line up.
+nnoremap <c-k> :m-2<cr>
+
+" ========= Refactoring BEGIN =========
+" local variable refactor
+nnoremap gr gd[{V%::s/<C-R>///g<left><left>
+" global variable refactor
+nnoremap gR gD:%s/<C-R>///g<left><left>
+" ========= Refactoring END =========
