@@ -57,17 +57,22 @@ colorscheme solarized
 " show line numbers
 set number
 
+" ======== SPACES and TABS ==========
 " set tabs to have 4 spaces
 set ts=4
-
+"
 " indent when moving to the next line while writing code
 set autoindent
+
+" show exisitng tab with 4 spaces witdth
+set tabstop=4
 
 " expand tabs into spaces
 set expandtab
 
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
+" ======== END SPACES and TABS =======
 
 " show a visual line under the cursor's current line
 set cursorline
