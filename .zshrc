@@ -175,3 +175,6 @@ export PATH="/usr/local/Cellar:$PATH"
 
 export NVM_DIR="/Users/Rafeh/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+bindkey -e
+bindkey '[C' forward-word
+bindkey '[D' backward-word
